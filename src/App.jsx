@@ -1,14 +1,37 @@
 import "./index.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import CatalogPage from "./pages/CatalogPage";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import CartPage from "./pages/CartPage";
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
   return (
     <>
-      <div className="bg-[url('../../src/images/main-bg.jpg')] bg-cover bg-bottom h-full w-full absolute">
-        <Header></Header>
-        <Main></Main>
-      </div>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/catalog">
+            <CatalogPage />
+          </Route>
+          <Route path="/about">
+            <AboutUs />
+          </Route>
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
+          <Route path="/cart">
+            <CartPage />
+          </Route>
+          <Route path="/profile">
+            <ProfilePage />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }
