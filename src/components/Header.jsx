@@ -5,7 +5,7 @@ function Header() {
   return (
     <div>
       <header className="flex justify-between h-16 items-center px-10 bg-stone-300">
-        <div className="flex gap-3 hover: cursor-pointer">
+        <div className="flex gap-3 hover: cursor-pointer w-1/4">
           <img className="w-7" src="/src/images/icons/sofa-svgrepo-com.svg" />
           <p className="logo text-xl">FURNITURE STORE.</p>
         </div>
@@ -37,7 +37,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <div className="flex text-2xl gap-2">
+        <div className="w-1/4	flex text-2xl gap-2 justify-end">
           <i className="hover: cursor-pointer">
             <CiShoppingCart />
           </i>
