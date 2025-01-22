@@ -6,11 +6,15 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
+import Header from "./components/Header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <>
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/">
             <HomePage />
@@ -32,6 +36,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <ToastContainer />
     </>
   );
 }
