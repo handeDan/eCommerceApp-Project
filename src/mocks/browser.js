@@ -11,7 +11,7 @@ export const worker = setupWorker(
           price: "1.100 TL",
           material: "Wooden",
           description: "Free shipping",
-          image: "/images/wooden-chair.jpg",
+          image: "/images/wooden_chair.jpg",
         },
         {
           id: "2",
@@ -67,7 +67,7 @@ export const worker = setupWorker(
           price: "3.150 TL",
           material: "Wooden",
           description: "Free shipping",
-          image: "/images/table.jpg",
+          image: "/images/dining_table.jpg",
         },
         {
           id: "9",
@@ -91,7 +91,7 @@ export const worker = setupWorker(
           price: "13.250 TL",
           material: "Wooden",
           description: "Free shipping",
-          image: "/images/bed.jpg",
+          image: "/images/dining_table.jpg",
         },
         {
           id: "12",
