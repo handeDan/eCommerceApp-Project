@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div>
       {" "}
-      <div className="bg-[url('../../src/images/main-bg.jpg')] bg-cover bg-bottom h-full w-full fixed">
+      <div>
         <Main></Main>
       </div>
     </div>
