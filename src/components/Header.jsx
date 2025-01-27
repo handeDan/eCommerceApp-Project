@@ -1,27 +1,27 @@
 import React from "react";
 import { CiShoppingCart, CiSearch, CiUser } from "react-icons/ci";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const goToHomePage = () => {
-    history.push("/");
+    navigate("/");
   };
   const goToCatalog = () => {
-    history.push("/catalog");
+    navigate("/catalog");
   };
   const goToAboutUs = () => {
-    history.push("/about");
+    navigate("/about");
   };
   const goToContactUs = () => {
-    history.push("/contact");
+    navigate("/contact");
   };
   const goToCartPage = () => {
-    history.push("/cart");
+    navigate("/cart");
   };
   const goToProfilePage = () => {
-    history.push("/profile");
+    navigate("/profile");
   };
   return (
     <div>

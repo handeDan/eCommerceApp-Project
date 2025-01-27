@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -11,10 +11,10 @@ import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 
 function Main() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.push("/catalog");
+    navigate("/catalog");
   };
 
   return (

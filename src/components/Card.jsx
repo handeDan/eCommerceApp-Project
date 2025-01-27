@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Card() {
   const [products, setProducts] = useState([]); // Ürünler için state
@@ -13,7 +13,7 @@ function Card() {
       .catch((error) => console.log(error));
   }, []);
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   //butona tıklayınca sepette sayı artsın:
   const addToCart = (product) => {
