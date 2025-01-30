@@ -1,7 +1,7 @@
 import React from "react";
 import { CiShoppingCart, CiSearch, CiUser } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
-
+import logo from "../images/icons/sofa-svgrepo-com.svg";
 function Header() {
   const navigate = useNavigate();
 
@@ -30,7 +30,7 @@ function Header() {
           onClick={goToHomePage}
           className="flex gap-3 hover: cursor-pointer w-1/4"
         >
-          <img className="w-7" src="/src/images/icons/sofa-svgrepo-com.svg" />
+          <img className="w-7" src={logo} />
           <p className="logo text-xl">FURNITURE STORE.</p>
         </div>
         <nav>
