@@ -37,7 +37,7 @@ function Main() {
           <div
             className="slide-content"
             style={{
-              backgroundImage: "url('/public/images/main-bg.jpg')",
+              backgroundImage: "url('/images/main-bg.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "bottom",
               height: "100vh", // Ekranın tamamını kaplasın
