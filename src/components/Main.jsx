@@ -60,7 +60,7 @@ function Main() {
           <div
             className="slide-content"
             style={{
-              backgroundImage: "url('/public/images/main-bg4.jpg')",
+              backgroundImage: "url('/images/main-bg4.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               height: "100vh", // Ekranın tamamını kaplasın
@@ -84,7 +84,7 @@ function Main() {
           <div
             className="slide-content"
             style={{
-              backgroundImage: "url('/public/images/main-bg3.jpg')",
+              backgroundImage: "url('/images/main-bg3.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               height: "100vh", // Ekranın tamamını kaplasın
